@@ -15,6 +15,9 @@
 
     <properties>
         <junit.version>5.8.1</junit.version>
+        <clean-plugin.version>3.2.0</clean-plugin.version>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -29,7 +32,18 @@
     <build>
         <plugins>
             <plugin>
-                <!-- something should be here-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${clean-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

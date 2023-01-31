@@ -10,9 +10,18 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+    </properties>
+
     <artifactId>demo</artifactId>
     <dependencies>
-        <!-- something should be here-->
+        <dependency>
+            <groupId>com.epam.utils</groupId>
+            <artifactId>utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
