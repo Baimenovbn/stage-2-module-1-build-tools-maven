@@ -2,7 +2,7 @@ package com.epam.utils;
 
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-        if (str.length() > 0 && str.charAt(0) == '0') {
+        if (str == null || (str.length() > 0 && str.charAt(0) == '0')) {
             return false;
         }
 
