@@ -16,8 +16,8 @@
     <properties>
         <junit.version>5.8.1</junit.version>
         <clean-plugin.version>3.2.0</clean-plugin.version>
-        <maven.compiler.source>19</maven.compiler.source>
-        <maven.compiler.target>19</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <dependencyManagement>
         <dependencies>
